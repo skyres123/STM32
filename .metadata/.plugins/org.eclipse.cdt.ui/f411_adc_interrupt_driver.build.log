@@ -1,0 +1,20 @@
+20:39:36 **** Incremental Build of configuration Debug for project f411_adc_interrupt_driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "f411_adc_interrupt_driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\asus\STM32CubeIDE\workspace_1.6.1\f411_adc_interrupt_driver\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f411_adc_interrupt_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f411_adc_interrupt_driver.elf
+ 
+arm-none-eabi-size   f411_adc_interrupt_driver.elf 
+arm-none-eabi-objdump -h -S  f411_adc_interrupt_driver.elf  > "f411_adc_interrupt_driver.list"
+arm-none-eabi-objcopy  -O ihex  f411_adc_interrupt_driver.elf  "f411_adc_interrupt_driver.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5960	    112	   1592	   7664	   1df0	f411_adc_interrupt_driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: f411_adc_interrupt_driver.hex
+Finished building: f411_adc_interrupt_driver.list
+ 
+ 
+
+20:39:37 Build Finished. 0 errors, 0 warnings. (took 1s.24ms)
+

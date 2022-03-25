@@ -1,0 +1,10 @@
+22:35:35 **** Build of configuration Release for project f411_TIMERS ****
+make -j8 all 
+arm-none-eabi-size   f411_TIMERS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5340	    112	   1592	   7044	   1b84	f411_TIMERS.elf
+Finished building: default.size.stdout
+ 
+
+22:35:35 Build Finished. 0 errors, 0 warnings. (took 463ms)
+

@@ -1,0 +1,10 @@
+22:35:39 **** Build of configuration Release for project led_f411ce ****
+make -j8 all 
+arm-none-eabi-size   led_f411ce.elf 
+   text	   data	    bss	    dec	    hex	filename
+    756	     12	   1572	   2340	    924	led_f411ce.elf
+Finished building: default.size.stdout
+ 
+
+22:35:39 Build Finished. 0 errors, 0 warnings. (took 391ms)
+

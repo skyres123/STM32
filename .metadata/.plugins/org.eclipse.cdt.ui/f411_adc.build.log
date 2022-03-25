@@ -1,0 +1,10 @@
+19:40:41 **** Incremental Build of configuration Release for project f411_adc ****
+make -j8 all 
+arm-none-eabi-size   f411_adc.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5348	    112	   1592	   7052	   1b8c	f411_adc.elf
+Finished building: default.size.stdout
+ 
+
+19:40:41 Build Finished. 0 errors, 0 warnings. (took 333ms)
+

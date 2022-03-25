@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;f411_InputInterrupt/Core/Src/extı.c&apos; to &apos;exti.c&apos;" description="Rename resource &apos;extı.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/extı.c" name="exti.c" stamp="1647805055355" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;f411_InputInterrupt/Core/Src/extı.h&apos; to &apos;exti.h&apos;" description="Rename resource &apos;extı.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/extı.h" name="exti.h" stamp="1647805065253" updateReferences="true"/>
+</session>

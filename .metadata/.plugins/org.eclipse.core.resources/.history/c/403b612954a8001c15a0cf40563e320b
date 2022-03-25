@@ -1,0 +1,28 @@
+#include <stdint.h>
+#include <stdio.h>
+#include "stm32f4xx.h"
+#include "uart.h"
+#include "adc.h"
+#include "systick.h"
+#include "tim.h"
+
+
+
+int main(void){
+
+
+
+	tim2_pa5_pwm();
+
+while(1){
+
+}
+		for(int i=0;i<26666;i++){
+		analogWrite(i);
+		systickDelayMs(50);
+		}
+
+
+
+	}
+

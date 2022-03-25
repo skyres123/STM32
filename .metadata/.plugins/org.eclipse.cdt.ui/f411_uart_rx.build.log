@@ -1,0 +1,21 @@
+17:48:16 **** Incremental Build of configuration Release for project f411_uart_rx ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
+arm-none-eabi-gcc -o "f411_uart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\asus\STM32CubeIDE\workspace_1.6.1\f411_uart_rx\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f411_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f411_uart_rx.elf
+ 
+arm-none-eabi-size   f411_uart_rx.elf 
+arm-none-eabi-objdump -h -S  f411_uart_rx.elf  > "f411_uart_rx.list"
+arm-none-eabi-objcopy  -O ihex  f411_uart_rx.elf  "f411_uart_rx.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5400	    112	   1592	   7104	   1bc0	f411_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: f411_uart_rx.hex
+Finished building: f411_uart_rx.list
+ 
+ 
+
+17:48:17 Build Finished. 0 errors, 0 warnings. (took 833ms)
+

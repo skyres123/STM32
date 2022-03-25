@@ -1,0 +1,12 @@
+#include "stm32f4xx.h"
+
+#define SYSTICK_LOAD_VAL 16000
+#define CTRL_ENABLE (1u<<0)
+#define CTRL_TICKINT (1u<<1)
+#define CTRL_CLKSRC (1u<<2)
+#define CTRL_COUNTFLAG (1u<<16)
+
+void systickDelayMs(int n){
+	//configure systick
+	SysTick->LOAD  =
+}

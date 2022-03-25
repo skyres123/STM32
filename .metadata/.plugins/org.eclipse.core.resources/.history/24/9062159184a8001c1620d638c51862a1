@@ -1,0 +1,26 @@
+#include <stdint.h>
+#include <stdio.h>
+#include "stm32f4xx.h"
+#include "uart.h"
+#include "adc.h"
+#include "systick.h"
+#include "tim.h"
+#include "extı.h"
+
+
+int main(void){
+
+
+	pc13_exti_init();
+
+
+while(1){
+
+}
+
+}
+
+void EXTI15_10_IRQHandler(void){
+
+}
+

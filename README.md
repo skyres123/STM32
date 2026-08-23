@@ -12,7 +12,6 @@ This repository contains a custom, bare-metal C driver library developed entirel
 *   **Timers (`TIM.h`):** Features driver functions for initializing general-purpose and advanced timers (TIM1 through TIM10), configuring interrupts, and generating PWM or Output Compare signals.
 *   **USART (`usart.h`):** Contains a configuration structure to easily set up UART communication with customizable baud rates, word lengths, stop bits, parity checks, and hardware flow control.
 *   **Hardware RNG (`RNG.h`):** Includes functions to enable and fetch true 32-bit random values directly from the STM32's internal Random Number Generator hardware.
-*   **LCD Character Display (`LCD.h`):** An external driver module for interfacing with standard character LCDs (configured for GPIOD), supporting basic commands like screen clear, display toggling, and string/character printing.
 
 ## Hardware Prerequisites
 *   **Target Board:** STM32F407 Discovery (STM32F407G-DISC1)
